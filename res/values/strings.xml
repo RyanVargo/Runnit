@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Runnit</string>
+    <string name="title_activity_log_in_screen">LogInScreen</string>
+    <string name="race_predictor">Race Predictor</string>
+    <string name="pace_calculator">Pace Calculator</string>
+    <string name="runners">runners</string>
+    <string name="welcome_to_runnit">Welcome to Runnit</string>
+    <string name="todo">TODO</string>
+</resources>

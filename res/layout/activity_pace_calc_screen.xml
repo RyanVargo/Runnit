@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/hoursInput"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/milesInput"
+        android:layout_centerHorizontal="true"
+        android:hint="hours"
+        android:inputType="number|numberDecimal" />
+
+    <EditText
+        android:id="@+id/milesInput"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:hint="miles"
+        android:inputType="number|numberDecimal" />
+
+    <EditText
+        android:id="@+id/minutesInput"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/hoursInput"
+        android:layout_centerHorizontal="true"
+        android:hint="minutes"
+        android:inputType="number|numberDecimal" />
+
+    <EditText
+        android:id="@+id/secondsInput"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/minutesInput"
+        android:layout_centerHorizontal="true"
+        android:hint="seconds"
+        android:inputType="number|numberDecimal" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="235dp"
+        android:text="Enter" />
+
+    <TextView
+        android:id="@+id/fourPaceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="92dp"
+        android:text="400 Pace:"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/paceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="134dp"
+        android:text="Mile Pace:"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="Pace Calculator"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="68dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/calculateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-235dp"
+        android:text="clear"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="68dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="back" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="99dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/watchline" />
+
+</RelativeLayout>

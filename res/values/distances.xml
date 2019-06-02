@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="distance_array">
+        <item>select distance</item>
+        <item>mile</item>
+        <item>2 mile</item>
+        <item>5k</item>
+        <item>10k</item>
+        <item>half-marathon</item>
+        <item>marathon</item>
+    </string-array>
+
+    <string-array name="distance2_array">
+        <item>select distance</item>
+        <item>mile</item>
+        <item>2 mile</item>
+        <item>5k</item>
+        <item>10k</item>
+        <item>half-marathon</item>
+        <item>marathon</item>
+    </string-array>
+</resources>

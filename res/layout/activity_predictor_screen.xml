@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PredictorScreen">
+
+    <TextView
+        android:id="@+id/titleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Race Predictor"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/previousLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="129dp"
+        android:text="Previous Race:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/secondsInput"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/minutesInput"
+        android:layout_toEndOf="@+id/previousLabel"
+        android:ems="10"
+        android:hint="seconds"
+        android:layout_centerHorizontal="true"
+        android:inputType="number|numberDecimal"
+        android:textSize="24sp"
+        android:windowSoftInputMode="stateHidden" />
+
+    <EditText
+        android:id="@+id/minutesInput"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="233dp"
+        android:ems="10"
+        android:hint="minutes"
+        android:inputType="number|numberDecimal"
+        android:textSize="24sp"
+        android:windowSoftInputMode="stateHidden" />
+
+    <EditText
+        android:id="@+id/hoursInput"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/minutesInput"
+        android:layout_toStartOf="@+id/previousLabel"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="hours"
+        android:inputType="number|numberDecimal"
+        android:textSize="24sp"
+        android:windowSoftInputMode="stateHidden" />
+
+    <TextView
+        android:id="@+id/predictLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Predict for:"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="133dp"
+        android:text="Calculate"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/calculatedLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="46dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mileageLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-255dp"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:windowSoftInputMode="stateHidden"/>
+
+    <EditText
+        android:id="@+id/firstDistance"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/previousLabel"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="distance (miles)"
+        android:inputType="number|numberDecimal"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/secondDistance"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/predictLabel"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="distance (miles)"
+        android:inputType="number|numberDecimal"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:id="@+id/secondCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/secondDistance"
+        android:layout_toEndOf="@+id/firstDistance"
+        android:text="kilometers" />
+
+    <CheckBox
+        android:id="@+id/firstCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/firstDistance"
+        android:layout_toEndOf="@+id/firstDistance"
+        android:text="kilometers" />
+
+    <EditText
+        android:id="@+id/mileageText"
+        android:layout_width="226dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/calculateButton"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Average Mileage (optional)"
+        android:inputType="number|numberDecimal"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="68dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/calculateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-133dp"
+        android:text="clear"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="68dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="back" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="107dp"
+        android:layout_height="125dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/runnerleft" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="107dp"
+        android:layout_height="125dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/runnerright" />
+
+</RelativeLayout>
